@@ -40,15 +40,14 @@ const localStyles = {
 
     header: {
         position: 'fixed',
-        top: 0,
-        left: 0,
         width: '100%',
         height: '3.8rem',
         backgroundColor: 'rgba(0,0,0,0.35)',
         backdropFilter: 'blur(6px)',
         borderBottom: `1px solid ${COLORS.BORDER}`,
-        display: 'grid',
-        gridTemplateColumns: 'auto 1fr auto',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center',
 
         padding: '0 1.5rem',
