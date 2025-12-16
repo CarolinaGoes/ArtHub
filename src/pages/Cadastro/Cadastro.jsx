@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Cadastro() {
+export default function cadastro() {
   const [dados, setDados] = useState({
     nome: '',
     email: '',

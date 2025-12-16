@@ -1,19 +1,21 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home/Home";
-import Login from "../pages/Login/Login";
-import Cadastro from "../pages/Cadastro/Cadastro";
-import ArtistaDashboard from "../pages/ArtistaDashboard/ArtistaDashboard";
-import Carrinho from "../pages/Carrinho/Carrinho";
+import Home from "../pages/home/Home.jsx";
+import Login from "../pages/login/Login.jsx";
+import Cadastro from "../pages/cadastro/Cadastro.jsx";
+import Perfil from "../pages/perfil/Perfil.jsx";
+import Carrinho from "../pages/carrinho/Carrinho.jsx";
+import Favoritos from "../pages/favoritos/Favoritos.jsx";
 
 export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/ArtistaDashboard" element={<ArtistaDashboard />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Cadastro" element={<Cadastro />} />
+        <Route path="/Perfil" element={<Perfil />} />
         <Route path="/Carrinho" element={<Carrinho />} />
+        <Route path="/Favoritos" element={<Favoritos />} />
       </Routes>
     </BrowserRouter>
   );

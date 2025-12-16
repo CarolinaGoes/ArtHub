@@ -85,13 +85,13 @@ export default function Home() {
                         <>
                       <div
                         style={localStyles.linksAcesso}
-                        onClick={() => navigate('/favoritos')}
+                        onClick={() => navigate('/Favoritos')}
                     >
                         ♥ 
                     </div>
                     <div
                         style={localStyles.linksAcesso}
-                        onClick={() => navigate('/ArtistaDashboard')}
+                        onClick={() => navigate('/Perfil')}
                     >
                         👤
                     </div>
